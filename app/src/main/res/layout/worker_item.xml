@@ -1,0 +1,22 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="worker"
+            type="com.example.alin_.lecturedbflow.persistence.Worker"/>
+    </data>
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+     >
+    <TextView
+        android:id="@+id/tv_worker_name"
+        android:text="@{worker.name}"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_worker_birthday"
+        android:text="@{String.valueOf(worker.dateOfBirth)}"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_worker_name"/>
+</RelativeLayout>
+</layout>
